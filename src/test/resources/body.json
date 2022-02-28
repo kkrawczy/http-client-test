@@ -1,0 +1,22 @@
+{
+  "portfolio": {
+    "currency": "CHF",
+    "positions": [
+      {
+        "key": "ubs",
+        "asset": "isin/CH0244767585",
+        "amount": 0.1
+      },
+      {
+        "key": "index1",
+        "asset": "id/e823a1cf-10bb-4abb-bea0-c854468713ae",
+        "amount": 0.8
+      },
+      {
+        "key": "six",
+        "asset": "id/123286a5-c6c9-4847-8ed1-3c759adc07c4",
+        "amount": 0.1
+      }
+    ]
+  }
+}

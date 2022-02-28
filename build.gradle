@@ -1,0 +1,29 @@
+plugins {
+    id 'org.springframework.boot' version '2.6.3'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.edgelab'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.projectlombok:lombok:1.18.22'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testCompileOnly 'org.projectlombok:lombok:1.18.12'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
+    implementation 'ch.qos.logback:logback-core:1.2.10'
+    implementation 'com.google.guava:guava:31.0.1-jre'
+    implementation 'org.slf4j:slf4j-api:1.7.36'
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
